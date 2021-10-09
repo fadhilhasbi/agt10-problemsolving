@@ -4,37 +4,18 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField]
-    private float speed = 10f;
-
+    // Inisiasi komponen Rigidbody2D dengan nama variabel rb
     private Rigidbody2D rb;
 
     private void Awake()
     {
+        //Mengambil komponen Rigidbody2D
         rb = GetComponent<Rigidbody2D>();
     }
 
     private void FixedUpdate()
     {
-        if (Input.GetKey(KeyCode.W))
-        {
-            rb.AddForce(new Vector2(0, speed));
-        }
-        else if (Input.GetKey(KeyCode.S))
-        {
-            rb.AddForce(new Vector2(0, -speed));
-        }
-        else if (Input.GetKey(KeyCode.D))
-        {
-            rb.AddForce(new Vector2(speed, 0));
-        }
-        else if (Input.GetKey(KeyCode.A))
-        {
-            rb.AddForce(new Vector2(-speed, 0));
-        }
-        else
-        {
-
-        }
+        //Membuat object bergerak menggunakan atribut AddForce di rigidbody2D
+        rb.AddForce(new Vector2(3, 2));
     }
 }
