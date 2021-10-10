@@ -6,4 +6,6 @@ Dalam repo ini terdiri dari beberapa branch untuk setiap 10 problem yang diberik
 - Branch dev2 : Isinya terkait problem 2
 - Branch dev3 : Isinya terkait problem 3
 - dst. hingga branch 9
-###
+
+For more detailed information, visit this project wiki here:  
+https://github.com/fadhilhasbi/agt10-problemsolving/wiki/Solution-of-10-Problems
